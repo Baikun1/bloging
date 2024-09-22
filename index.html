@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .learn-card,
+        .practice-card,
+        .blog-card {
+            transition: transform 0.3s ease;
+        }
+
+        .learn-card:hover,
+        .practice-card:hover,
+        .blog-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Greeting Section -->
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyCompany - Alternative Hero Section</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        </style>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['Poppins', 'sans-serif'],
+                        },
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body class="font-sans">
+
+        <nav class="bg-gray-800 p-4 shadow-md fixed w-full z-10 top-0">
+            <div class="container mx-auto flex justify-between items-center">
+              <!-- Logo / Brand Name -->
+              <a href="./underdevelopment.html" class="text-white text-2xl font-bold">My Blog</a>
+              
+              <!-- Navbar Links -->
+              <div class="hidden md:flex space-x-6">
+                <a href="https://baikun1.github.io/portfolio1/" class="text-gray-300 hover:text-white">About Me</a>
+                <a href="#learn-with-me" class="text-gray-300 hover:text-white">Learn with Me</a>
+                <a href="./underdevelopment.html" class="text-gray-300 hover:text-white">Practice</a>
+                <a href="#blog-section" class="text-gray-300 hover:text-white">Blog</a>
+              </div>
+              
+              <!-- Hamburger Menu (for mobile) -->
+              <button class="text-gray-300 md:hidden" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden" id="mobile-menu" style="display: none;">
+              <a href="#about-me" class="block text-gray-300 px-2 py-2 hover:bg-gray-700">About Me</a>
+              <a href="#learn-with-me" class="block text-gray-300 px-2 py-2 hover:bg-gray-700">Learn with Me</a>
+              <a href="./practice.html" class="block text-gray-300 px-2 py-2 hover:bg-gray-700">Practice</a>
+              <a href="#blog-section" class="block text-gray-300 px-2 py-2 hover:bg-gray-700">Blog</a>
+            </div>
+          </nav>
+          
+        <!-- ... (previous header code remains unchanged) ... -->
+
+        <main class="pt-16">
+            <!-- Hero Section -->
+            <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                <div class="absolute inset-0 bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+                </div>
+
+                <div class="container mx-auto px-4 py-24 md:py-32 relative z-11">
+                    <div class="flex flex-col md:flex-row items-center justify-between">
+                        <!-- Left Side: Company Info -->
+                        <div class="w-full md:w-1/2 mb-12 md:mb-0">
+                            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                                Learn from my coding journey
+                            </h1>
+                            <p class="text-xl mb-8 text-gray-300">Join me as I learn, grow, and share my experiences in
+                                the world of technology</p>
+                            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                                <a href="#"
+                                    class="bg-white text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Subscribe</a>
+                                <a href="./underdevelopment.html"
+                                    class="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center">Learn
+                                    More</a>
+                            </div>
+                        </div>
+
+                        <!-- Right Side: Features -->
+                        <div class="w-full md:w-1/2 md:pl-12">
+                            <div
+                                class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
+                                <h2 class="text-2xl font-semibold mb-6">What to Expect?</h2>
+                                <ul class="space-y-4">
+                                    <li class="flex items-center">
+                                        <svg class="w-6 h-6 mr-3 text-yellow-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        </svg>
+                                        <span>Insights on the latest tech trends and innovations</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-6 h-6 mr-3 text-green-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                            </path>
+                                        </svg>
+                                        <span>Personal anecdotes and lessons learned from my coding journey
+                                        </span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-6 h-6 mr-3 text-purple-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                                            </path>
+                                        </svg>
+                                        <span>Practical tutorials and guides on programming and web development</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decorative Element -->
+                <div class="absolute bottom-0 left-0 right-0">
+                    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </section>
+
+            <!-- ... (rest of your main content) ... -->
+
+
+            <!-- ... (previous script remains unchanged) ... -->
+
+
+            <div class="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
+                <div class="absolute inset-0">
+                    <div class="h-1/3 bg-white sm:h-2/3"></div>
+                </div>
+                <div class="relative mx-auto max-w-7xl">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Fresh Insights</h2>
+                        <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+                            The latest articles from our blog, covering the latest trends and technologies</p>
+                    </div>
+                    <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+
+
+                        <!-- Card 1: Setting Up Coding Environment -->
+                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-48 w-full object-cover"
+                                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+                                    alt="Coding Environment">
+                            </div>
+                            <div class="flex-1 flex-col justify-between bg-white p-6">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <a href="./underdevelopment.html" class="hover:underline">Development Setup</a>
+                                </p>
+                                <a href="./underdevelopment.html">
+                                    <p class="text-xl font-semibold text-gray-900">How to Set Up Your Coding Environment
+                                    </p>
+                                    <p class="mt-3 text-base text-gray-500">Learn the best tools and configurations to
+                                        get your coding environment up and running smoothly.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Best Laptop for Developers -->
+                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-48 w-full object-cover"
+                                    src="https://plus.unsplash.com/premium_photo-1663040543387-cb7c78c4f012?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Best Laptop">
+                            </div>
+                            <div class="flex-1 flex-col justify-between bg-white p-6">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <a href="./underdevelopment.html" class="hover:underline">Hardware</a>
+                                </p>
+                                <a href="./underdevelopment.html">
+                                    <p class="text-xl font-semibold text-gray-900">Best Laptops for Developers in 2024
+                                    </p>
+                                    <p class="mt-3 text-base text-gray-500">A curated list of the top-performing laptops
+                                        for developers to boost your productivity and workflow.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: IDEs for Beginners -->
+                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-48 w-full object-cover"
+                                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+                                    alt="IDEs for Developers">
+                            </div>
+                            <div class="flex-1 flex-col justify-between bg-white p-6">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <a href="./underdevelopment.html" class="hover:underline">Tools</a>
+                                </p>
+                                <a href="./underdevelopment.html">
+                                    <p class="text-xl font-semibold text-gray-900">Top 5 IDEs for Beginners</p>
+                                    <p class="mt-3 text-base text-gray-500">Explore the most beginner-friendly
+                                        Integrated Development Environments (IDEs) for coding in various languages.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Version Control with Git -->
+                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-48 w-full object-cover"
+                                    src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Version Control">
+                            </div>
+                            <div class="flex-1 flex-col justify-between bg-white p-6">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <a href="./underdevelopment.html" class="hover:underline">Version Control</a>
+                                </p>
+                                <a href="./underdevelopment.html">
+                                    <p class="text-xl font-semibold text-gray-900">Version Control for Beginners: Git &
+                                        GitHub</p>
+                                    <p class="mt-3 text-base text-gray-500">An introduction to version control and how
+                                        to manage your projects using Git and GitHub.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: Learning JavaScript -->
+                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-48 w-full object-cover"
+                                    src="https://images.unsplash.com/photo-1670057037226-b3d65909424f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Learning JavaScript">
+                            </div>
+                            <div class="flex-1 flex-col justify-between bg-white p-6">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <a href="./underdevelopment.html" class="hover:underline">JavaScript</a>
+                                </p>
+                                <a href="./underdevelopment.html">
+                                    <p class="text-xl font-semibold text-gray-900">Learning JavaScript: A Guide for
+                                        Beginners</p>
+                                    <p class="mt-3 text-base text-gray-500">Start your journey into JavaScript with this
+                                        comprehensive guide designed for beginners.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: Productivity Tools for Developers -->
+                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-48 w-full object-cover"
+                                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+                                    alt="Productivity Tools">
+                            </div>
+                            <div class="flex-1 flex-col justify-between bg-white p-6">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <a href="./underdevelopment.html" class="hover:underline">Productivity</a>
+                                </p>
+                                <a href="./underdevelopment.html">
+                                    <p class="text-xl font-semibold text-gray-900">Best Productivity Tools for
+                                        Developers</p>
+                                    <p class="mt-3 text-base text-gray-500">Discover the top productivity tools to help
+                                        you stay organized and efficient while coding.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 7: Debugging Best Practices -->
+                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-48 w-full object-cover"
+                                    src="https://plus.unsplash.com/premium_photo-1661548080414-743d241c05ba?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Ds"
+                                    alt="Debugging">
+                            </div>
+                            <div class="flex-1 flex-col justify-between bg-white p-6">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <a href="./underdevelopment.html" class="hover:underline">Debugging</a>
+                                </p>
+                                <a href="./underdevelopment.html">
+                                    <p class="text-xl font-semibold text-gray-900">Debugging Best Practices for
+                                        Beginners</p>
+                                    <p class="mt-3 text-base text-gray-500">Learn how to effectively debug your code
+                                        with these simple best practices and tips.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="learn-with-me" class="bg-white dark:bg-gray-900">
+                <!-- Title Section -->
+                <div class="text-center py-10">
+                    <h1 class="text-4xl font-bold text-black dark:text-white mb-4">Discover New Adventures</h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-400">Explore, discover, and find inspiration through
+                        these exciting journeys.</p>
+                </div>
+
+                <!-- Content Section -->
+                <div
+                    class="px-8 py-10 mx-auto lg:max-w-screen-xl sm:max-w-xl md:max-w-full sm:px-12 md:px-16 lg:py-20 sm:py-16">
+                    <div class="grid gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="relative">
+                            <a href="./underdevelopment.html_" class="block overflow-hidden group rounded-xl shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1649180556628-9ba704115795?q=80&w=1462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="object-cover w-full h-56 transition-all duration-300 ease-out sm:h-64 group-hover:scale-110"
+                                    alt="Adventure">
+                            </a>
+                            <div class="relative mt-5">
+                                <p class="uppercase font-semibold text-xs mb-2.5 text-purple-600">Basic Python
+                                </p>
+                                <a href="./underdevelopment.html" class="block mb-3 hover:underline">
+                                    <h2
+                                        class="text-2xl font-bold leading-5 text-black dark:text-white transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-400">
+                                        Python Pandemonium: A Beginner's Adventure
+                                    </h2>
+                                </a>
+                                <p class="mb-4 text-gray-700 dark:text-gray-300">Escape the hustle and explore the
+                                    serene beauty of the mountains. Discover the peace and adventure that awaits.</p>
+                                <a href="./underdevelopment.html_" class="font-medium underline text-purple-600 dark:text-purple-400">Read
+                                    More</a>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <a href="./underdevelopment.html_" class="block overflow-hidden group rounded-xl shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1667372393086-9d4001d51cf1?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="object-cover w-full h-56 transition-all duration-300 ease-out sm:h-64 group-hover:scale-110"
+                                    alt="Ocean">
+                            </a>
+                            <div class="relative mt-5">
+                                <p class="uppercase font-semibold text-xs mb-2.5 text-purple-600">JavaScript guid
+                                </p>
+                                <a href="./underdevelopment.html" class="block mb-3 hover:underline">
+                                    <h2
+                                        class="text-2xl font-bold leading-5 text-black dark:text-white transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-400">
+                                        JavaScript Journey: From Novice to Ninja
+                                    </h2>
+                                </a>
+                                <p class="mb-4 text-gray-700 dark:text-gray-300">Dive into the deep oceans and explore
+                                    the beauty and mystery of the underwater world. A truly unforgettable experience.
+                                </p>
+                                <a href="./underdevelopment.html_" class="font-medium underline text-purple-600 dark:text-purple-400">Read
+                                    More</a>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <a href="./underdevelopment.html_" class="block overflow-hidden group rounded-xl shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1662026911591-335639b11db6?q=80&w=1462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="object-cover w-full h-56 transition-all duration-300 ease-out sm:h-64 group-hover:scale-110"
+                                    alt="Desert Adventure">
+                            </a>
+                            <div class="relative mt-5">
+                                <p class="uppercase font-semibold text-xs mb-2.5 text-purple-600">Basic SQL</p>
+                                <a href="./underdevelopment.html" class="block mb-3 hover:underline">
+                                    <h2
+                                        class="text-2xl font-bold leading-5 text-black dark:text-white transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-400">
+                                        SQL Safari: Exploring Database Adventures
+                                    </h2>
+                                </a>
+                                <p class="mb-4 text-gray-700 dark:text-gray-300">Venture into the heart of the desert
+                                    and experience the thrill of a safari amidst the dunes.</p>
+                                <a href="./underdevelopment.html_" class="font-medium underline text-purple-600 dark:text-purple-400">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white text-center py-4">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+    </html>
